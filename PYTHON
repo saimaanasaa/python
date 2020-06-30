@@ -1,0 +1,21 @@
+#assigning elements to  a list
+list=[];
+n=int(input("NO OF ELEMENTS IN THE LIST:")); 
+for x in range (n):
+    data=str(input());
+    list.append(data);
+print(list);
+
+#acessing elements from the tuple
+tup=tuple(list);  #converting the list to a tuple 
+print(tup);
+print(tup[0]);    #accesing elements in a tuple
+print(tup[::-1]);  #accesing elements in a tuple
+
+#deleting elements in a dictionary
+dictionary={'1':'c++','2':'python','3':'java'};
+print(dictionary);
+del dictionary['1'];   #deleting an element
+print(dictionary);
+dictionary.pop('3');    #deleting an element by using pop
+print(dictionary);
